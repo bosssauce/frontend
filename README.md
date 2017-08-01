@@ -27,7 +27,7 @@ type Song struct {
 }
 
 func init() {
-    // add routes/handlers to the frontend Router, which is a *mux.Router
+    // add routes/handlers to the frontend Router, which embeds a *mux.Router
     frontend.Router.HandleFunc("/songs", func(res http.ResponseWriter, req *http.Request) {
         // GET /api/contents?type=Song
         ...
